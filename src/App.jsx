@@ -7,6 +7,7 @@ import Resources from './components/Resources';
 import Contact from './components/Contact';
 import QuestionForm from './components/QuestionForm';
 import ResultModal from './components/ResultModal';
+import VrTherapy from './components/VrTherapy';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/assessment" element={<QuestionForm />} />
           <Route path="/results" element={<ResultModal />} />
+          <Route path="/vrtherapy" element={<VrTherapy />} />
         </Routes>
         <Footer />
       </div>
