@@ -14,7 +14,7 @@ const featuresData = [
         description: "Our automated testing ensures accurate, unbiased mental health evaluations, free from human error or prejudice.",
         // buttonText: "Learn More",
         icon: faRocket,
-        image: "src/assets/doctor.jpg",
+        image: "https://github.com/Selva-TS-cube/Health3/blob/main/src/assets/doctor.jpg?raw=true",
         color: "bg-blue-50",
         iconColor: "text-blue-500"
     },
@@ -23,7 +23,7 @@ const featuresData = [
         description: "Engage in a tailored VR environment designed to enhance your therapy sessions and improve overall mental well-being.",
         // buttonText: "Discover More",
         icon: faCog,
-        image: "src/assets/vr.jpg",
+        image: "https://github.com/Selva-TS-cube/Health3/blob/main/src/assets/vr.jpg?raw=true",
         color: "bg-green-50",
         iconColor: "text-green-500"
     },
@@ -32,7 +32,7 @@ const featuresData = [
         description: "We prioritize your privacy with advanced security measures, safeguarding your personal and health information at all times.",
         // buttonText: "Secure Now",
         icon: faShieldAlt,
-        image: "src/assets/lockk.jpg",
+        image: "https://github.com/Selva-TS-cube/Health3/blob/main/src/assets/lockk.jpg?raw=true",
         color: "bg-red-50",
         iconColor: "text-red-500"
     },
@@ -41,7 +41,7 @@ const featuresData = [
         description: "Access professional mental health support from certified psychiatrists, available online for your convenience and care.",
         // buttonText: "Join Us",
         icon: faUsers,
-        image: "src/assets/cert.png",
+        image: "https://github.com/Selva-TS-cube/Health3/blob/main/src/assets/cert.png?raw=true",
         color: "bg-purple-50",
         iconColor: "text-purple-500"
     }

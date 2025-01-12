@@ -149,7 +149,7 @@ const Resources = () => {
                         ">
                             <div className="absolute inset-0 bg-gradient-to-br from-purple-200 to-blue-200 opacity-20 blur-2xl"></div>
                             <img 
-                                src="https://placehold.co/400x400" 
+                                src="src/assets/res.jpeg" 
                                 alt="VR and AR Technology in Mental Health" 
                                 className="
                                     relative 

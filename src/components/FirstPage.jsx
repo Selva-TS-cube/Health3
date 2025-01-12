@@ -13,7 +13,7 @@ const FirstPage = () => {
                         <div className="p-3 h-200 flex items-center justify-center">
                             {/* Replace FontAwesomeIcon with img tag */}
                             <img 
-                                src="src/assets/hero.png" 
+                                src="https://github.com/Selva-TS-cube/Health3/blob/main/src/assets/hero.png?raw=true" 
                                 alt="Hero Image" 
                                 className="w-full h-full object-cover"
                             />
