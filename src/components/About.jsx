@@ -202,13 +202,7 @@ const About = () => {
                                 className="absolute -left-8 top-0 text-purple-200 text-4xl" 
                             />
                             <p>
-                                Founded in 2005, our healthcare organization began with a simple yet powerful mission: 
-                                to provide exceptional, patient-centered medical care that transforms lives.
-                            </p>
-                            <p>
-                                What started as a small medical center has grown into a comprehensive 
-                                healthcare network, serving thousands of patients with cutting-edge 
-                                medical solutions and compassionate care.
+                            At Health3, our journey began with a vision to redefine mental health care through innovative technology. Understanding the therapeutic power of animal-assisted therapy and the barriers many face—such as allergies, phobias, or access limitations—we set out to create a groundbreaking solution. Our AI-driven VR therapy framework replicates the emotional connection of pet interactions in a customizable, immersive environment. By leveraging advanced virtual reality, AI sentiment analysis, and secure blockchain-based data management, Health3 is making mental health care more inclusive, accessible, and transformative for individuals worldwide.
                             </p>
                         </div>
                     </div>

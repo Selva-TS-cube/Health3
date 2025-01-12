@@ -10,38 +10,38 @@ import {
 
 const featuresData = [
     {
-        title: "Performance Optimization",
-        description: "Experience unparalleled performance with our cutting-edge technology that pushes the boundaries of innovation.",
-        buttonText: "Learn More",
+        title: "Automated and Unbiased Test",
+        description: "Our automated testing ensures accurate, unbiased mental health evaluations, free from human error or prejudice.",
+        // buttonText: "Learn More",
         icon: faRocket,
-        image: "https://placehold.co/300x200",
+        image: "src/assets/doctor.jpg",
         color: "bg-blue-50",
         iconColor: "text-blue-500"
     },
     {
-        title: "Workflow Automation",
-        description: "Streamline your processes with powerful automation tools designed to increase efficiency and productivity.",
-        buttonText: "Discover More",
+        title: "Personalized VR Experience",
+        description: "Engage in a tailored VR environment designed to enhance your therapy sessions and improve overall mental well-being.",
+        // buttonText: "Discover More",
         icon: faCog,
-        image: "https://placehold.co/300x200",
+        image: "src/assets/vr.jpg",
         color: "bg-green-50",
         iconColor: "text-green-500"
     },
     {
-        title: "Advanced Security",
-        description: "Enhance your digital protection with our state-of-the-art security measures and comprehensive safeguards.",
-        buttonText: "Secure Now",
+        title: "Data Security",
+        description: "We prioritize your privacy with advanced security measures, safeguarding your personal and health information at all times.",
+        // buttonText: "Secure Now",
         icon: faShieldAlt,
-        image: "https://placehold.co/300x200",
+        image: "src/assets/lockk.jpg",
         color: "bg-red-50",
         iconColor: "text-red-500"
     },
     {
-        title: "Team Collaboration",
-        description: "Enable seamless collaboration with intuitive tools that connect your team and clients effortlessly.",
-        buttonText: "Join Us",
+        title: "Certified Psychiatrist Online",
+        description: "Access professional mental health support from certified psychiatrists, available online for your convenience and care.",
+        // buttonText: "Join Us",
         icon: faUsers,
-        image: "https://placehold.co/300x200",
+        image: "src/assets/cert.png",
         color: "bg-purple-50",
         iconColor: "text-purple-500"
     }
@@ -129,10 +129,10 @@ const Features = () => {
                                 `}
                             >
                                 <span>{feature.buttonText}</span>
-                                <FontAwesomeIcon 
+                                {/* <FontAwesomeIcon 
                                     icon={faArrowRight} 
                                     className="ml-2"
-                                />
+                                /> */}
                             </button>
 
                             {/* Feature Image */}

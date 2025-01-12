@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faImage, faArrowRight, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 
 const FirstPage = () => {
     return (
@@ -9,11 +9,13 @@ const FirstPage = () => {
             <div className="container mx-auto px-4 py-16 grid md:grid-cols-2 gap-12 items-center">
                 {/* Image Section */}
                 <div className="relative">
-                    <div className="bg-gray-100 rounded-2xl shadow-xl overflow-hidden transform transition-transform hover:scale-105">
-                        <div className="bg-gray-200 h-96 flex items-center justify-center">
-                            <FontAwesomeIcon 
-                                icon={faImage} 
-                                className="text-6xl text-gray-400 opacity-70 transition-all hover:scale-110" 
+                    <div className=" rounded-2xl shadow-xl overflow-hidden transform transition-transform hover:scale-105">
+                        <div className="p-3 h-200 flex items-center justify-center">
+                            {/* Replace FontAwesomeIcon with img tag */}
+                            <img 
+                                src="src/assets/hero.png" 
+                                alt="Hero Image" 
+                                className="w-full h-full object-cover"
                             />
                         </div>
                     </div>
@@ -51,9 +53,9 @@ const FirstPage = () => {
                             <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
                         </Link>
                         
-                        <button className="px-6 py-3 border border-purple-600 text-purple-600 rounded-full hover:bg-purple-50 transition-all transform hover:scale-105">
+                        {/* <button className="px-6 py-3 border border-purple-600 text-purple-600 rounded-full hover:bg-purple-50 transition-all transform hover:scale-105">
                             Learn More
-                        </button>
+                        </button> */}
                     </div>
 
                     {/* Feature Highlights */}

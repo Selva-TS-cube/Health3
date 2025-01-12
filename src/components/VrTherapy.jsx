@@ -20,41 +20,49 @@ const VrTherapy = () => {
       icon: faHeartbeat,
       color: "from-blue-100 to-purple-100",
       details: "Advanced VR scenarios designed to help patients gradually confront and manage anxiety triggers in a controlled, safe digital environment.",
-      image: "https://images.unsplash.com/photo-1593508512255-8ce5d4245034?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80",
+      image: "https://recovered.sfo3.cdn.digitaloceanspaces.com/media/15844/Anxiety-disorders-(1).jpg?v=1722503273",
       vrModel: "Calm Mountain Landscape",
-      difficulty: "Beginner Friendly"
+      difficulty: "Beginner Friendly",
+      link: "https://jayasudhan-m.github.io/VRAnxiety/"
     },
     {
-      title: "PTSD Treatment Suite",
+      title: "Depression Relief VR",
       description: "Trauma processing virtual environments",
       icon: faBrain,
       color: "from-green-100 to-teal-100",
-      details: "Specialized VR scenarios with guided therapeutic interventions to help patients process and manage traumatic experiences safely.",
-      image: "https://images.unsplash.com/photo-1599140781076-28d63d75ddc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      vrModel: "Safe Reconstruction Scenario",
-      difficulty: "Advanced Level"
+      details: "Specialized VR scenarios with guided therapeutic interventions to help patients process and manage depressive experiences safely.",
+      image: "https://img.freepik.com/free-vector/depression-concept-illustration_114360-3747.jpg",
+      vrModel: "Mood Elevation Scenario",
+      difficulty: "Advanced Level",
+      link: "https://jayasudhan-m.github.io/VRDepression/"
     },
     {
-      title: "Pain Management VR",
+      title: "Paranoia Management VR",
       description: "Immersive distraction and relief experiences",
       icon: faVrCardboard,
       color: "from-red-100 to-pink-100",
-      details: "Cutting-edge VR experiences that redirect focus, provide sensory manipulation, and offer alternative pain perception techniques.",
-      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      vrModel: "Healing Meditation Realm",
-      difficulty: "Intermediate"
+      details: "Cutting-edge VR experiences that help patients understand and manage paranoid thoughts in a controlled, supportive environment.",
+      image: "https://img.freepik.com/free-vector/paranoia-concept-illustration_114360-8077.jpg",
+      vrModel: "Safe Space Simulation",
+      difficulty: "Intermediate",
+      link: "https://jayasudhan-m.github.io/VRParanoia/"
     },
     {
-      title: "Social Skills Trainer",
-      description: "Interactive social interaction simulations",
+      title: "Phobia Exposure VR",
+      description: "Interactive phobia management simulations",
       icon: faUser,
       color: "from-purple-100 to-indigo-100",
-      details: "Innovative VR training programs creating realistic social scenarios to help individuals develop communication and interaction skills.",
+      details: "Innovative VR training programs creating realistic scenarios to help individuals overcome specific phobias in a controlled setting.",
       image: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1450&q=80",
-      vrModel: "Social Interaction Simulator",
-      difficulty: "Adaptive Difficulty"
+      vrModel: "Phobia Confrontation Simulator",
+      difficulty: "Adaptive Difficulty",
+      link: "https://jayasudhan-m.github.io/VRDog/"
     }
   ];
+
+  const handleVRSessionLink = (link) => {
+    window.open(link, '_blank');
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 py-16 px-4">
@@ -132,7 +140,8 @@ const VrTherapy = () => {
                       icon={option.icon} 
                       className="text-2xl text-purple-600 mr-3"
                     />
-                    <h2 className="text-2xl font-bold text-gray-800">
+                    <h2
+                      className="text-2xl font-bold text-gray-800">
                       {option.title}
                     </h2>
                   </div>
@@ -177,8 +186,9 @@ const VrTherapy = () => {
                     justify-center
                     space-x-2
                   "
+                  onClick={() => handleVRSessionLink(option.link)}
                 >
-                  <span>View</span>
+                  <span>View Session</span>
                   <FontAwesomeIcon 
                     icon={faArrowRight} 
                     className="h-5 w-5" 

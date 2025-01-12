@@ -1,13 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { 
-  faArrowLeft, 
-  faArrowRight, 
-  faCheck 
-} from '@fortawesome/free-solid-svg-icons';
 import { categories, questionsText, labels } from "../constants";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft, faArrowRight, faCheck } from '@fortawesome/free-solid-svg-icons';
 
 function QuestionForm() {
   const navigate = useNavigate();

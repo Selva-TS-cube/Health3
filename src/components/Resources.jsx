@@ -3,37 +3,45 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
     faMicrophone, 
     faShieldAlt, 
+    faClipboardList,
     faVrCardboard,
     faBookOpen,
     faCalendarAlt,
     faPlayCircle
 } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom';
 
 const Resources = () => {
     const [activeVideo, setActiveVideo] = useState(false);
+    const navigate = useNavigate();
+
     const blogPosts = [
         {
             title: "Revolutionizing Mental Health with VR",
             description: "Exploring the transformative potential of virtual reality in psychiatric care.",
-            image: "https://placehold.co/400x200",
+            image: "https://digitalsalutem.com/wp-content/uploads/2023/09/How-VR-is-Making-Significant-Strides-in-Revolutionizing-Healthcare.jpg",
             date: "Jan 15, 2024",
             readTime: "5 min read"
         },
         {
             title: "AR Therapy: A New Frontier",
             description: "How augmented reality is changing the landscape of mental health treatment.",
-            image: "https://placehold.co/400x200",
+            image: "https://www.magineu.com/wp-content/uploads/2023/09/extended-reality-xr-in-therapy-healthcare-img.jpg",
             date: "Feb 1, 2024",
             readTime: "7 min read"
         },
         {
             title: "Personalized Digital Healing",
             description: "The intersection of technology and compassionate mental health support.",
-            image: "https://placehold.co/400x200",
+            image: "https://globalhealthcareoutlook.com/wp-content/uploads/2024/02/Digital_Healing_The_Apps_and_Gadgets_Transforming_Personal_Wellness.png",
             date: "Mar 10, 2024",
             readTime: "6 min read"
         }
     ];
+
+    const handleTakeTest = () => {
+        navigate('/assessment');
+    };
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-purple-50 to-white py-16 px-4">
@@ -100,41 +108,27 @@ const Resources = () => {
                             ))}
                         </div>
                         <div className="flex space-x-4">
-                            <button className="
-                                px-8 py-4 
-                                bg-purple-600 
-                                text-white 
-                                font-semibold 
-                                rounded-full 
-                                hover:bg-purple-700 
-                                transition-colors
-                                shadow-lg
-                                hover:shadow-xl
-                                flex
-                                items-center
-                                space-x-2
-                            ">
-                                <span>Book Consultation</span>
-                            </button>
                             <button 
-                                onClick={() => setActiveVideo(true)}
+                                onClick={handleTakeTest}
                                 className="
                                     px-8 py-4 
-                                    border-2 
-                                    border-purple-600 
-                                    text-purple-600 
+                                    bg-purple-600 
+                                    text-white 
                                     font-semibold 
                                     rounded-full 
-                                    hover:bg-purple-50 
+                                    hover:bg-purple-700 
                                     transition-colors
+                                    shadow-lg
+                                    hover:shadow-xl
                                     flex
                                     items-center
                                     space-x-2
                                 "
                             >
-                                <FontAwesomeIcon icon={faPlayCircle} />
-                                <span>Watch Video</span>
+                                <FontAwesomeIcon icon={faClipboardList} />
+                                <span>Take Test</span>
                             </button>
+                            
                         </div>
                     </div>
                     <div className="flex justify-center">

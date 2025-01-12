@@ -20,11 +20,11 @@ const Footer = () => {
                     <div className="flex flex-col items-center md:items-start">
                         <div className="flex items-center mb-4">
                             <img 
-                                src="https://placehold.co/100x100" 
+                                src="https://assets.zenn.com/strapi_assets/therapy_logo_a19e507b79.png" 
                                 alt="Company Logo" 
                                 className="rounded-full w-20 h-20 object-cover mr-4 shadow-lg"
                             />
-                            <h2 className="text-2xl font-bold text-gray-800">ProductName</h2>
+                            <h2 className="text-2xl font-bold text-gray-800">Health3</h2>
                         </div>
                         <p className="text-gray-600 text-center md:text-left mb-4">
                             Innovative solutions that transform your digital experience.
@@ -80,7 +80,7 @@ const Footer = () => {
                             {[
                                 { 
                                     icon: faEnvelope, 
-                                    text: 'support@productname.com',
+                                    text: 'support@Health3.com',
                                     color: 'text-red-500'
                                 },
                                 { 
@@ -113,7 +113,7 @@ const Footer = () => {
                 <div className="border-t border-purple-200 pt-6">
                     <div className="flex flex-col md:flex-row justify-between items-center">
                         <p className="text-gray-600 mb-4 md:mb-0">
-                            © {currentYear} ProductName. All rights reserved.
+                            © {currentYear} Health3. All rights reserved.
                         </p>
                         <div className="flex space-x-4">
                             <a href="#" className="text-gray-600 hover:text-purple-600">

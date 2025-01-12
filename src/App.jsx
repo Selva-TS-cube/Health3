@@ -10,6 +10,7 @@ import ResultModal from './components/ResultModal';
 import VrTherapy from './components/VrTherapy';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import WolframChatbot from './components/WolframChatbot';
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/assessment" element={<QuestionForm />} />
           <Route path="/results" element={<ResultModal />} />
           <Route path="/vrtherapy" element={<VrTherapy />} />
+          <Route path="/wolfram" element={<WolframChatbot />} />
         </Routes>
         <Footer />
       </div>
